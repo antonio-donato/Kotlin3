@@ -1,6 +1,5 @@
 fun main(args: Array<String>) {
-    val variabile: String
-    variabile=ScriviCiao("Ciao")
+    val variabile: String = ScriviCiao("Ciao")
     println(variabile)
 }
 
