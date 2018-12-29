@@ -1,12 +1,12 @@
 fun main(args: Array<String>) {
-    var variabile:String = ""
-    ScriviCiao("Ciao", variabile)
-    println("$variabile")
+    val variabile: String
+    variabile=ScriviCiao("Ciao")
+    println(variabile)
 }
 
 var varibile: String = ""
 
-fun ScriviCiao(scritta: String, variabile: String) {
+fun ScriviCiao(scritta: String) : String{
     println("Hai scritto $scritta")
-    variabile="pippo"
+    return "pippo"
 }
