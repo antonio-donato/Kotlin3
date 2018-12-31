@@ -1,10 +1,14 @@
 
 fun main(args: Array<String>) {
     val dell = Pc()
-    dell.changePower()
-    val variabile: String = ScriviCiao("Ciao")
+    val variabile = ScriviCiao("Ciao")
     println(variabile)
+
+    dell.changePower()
     println("${dell.power}")
+
+    dell.calculate()
+    println("${dell.velocita}")
 }
 
 fun ScriviCiao(scritta: String) : String{

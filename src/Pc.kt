@@ -1,7 +1,10 @@
+import java.time.LocalTime
 class Pc: iPc {
 
+    var velocita: Float = 0.0F
     override fun calculate() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val ora = LocalTime.now()
+        velocita = (27.8 * ora.nano).toFloat()
     }
     var power: Boolean = false
     override fun changePower() {
